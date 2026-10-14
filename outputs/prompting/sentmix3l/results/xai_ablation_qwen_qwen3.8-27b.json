@@ -294,5 +294,42 @@
         "support": 0
       }
     }
+  },
+  "zero_shot_ablate_drop_rule7_v1": {
+    "name": "Drop Rule 7",
+    "description": "Removes 'Do not invent labels' rule",
+    "accuracy": 0.632572,
+    "delta_acc": -0.033764000000000016,
+    "f1": 0.649494,
+    "delta_f1": -0.039721000000000006,
+    "invalid_rate": 0.18867924528301888,
+    "delta_invalid": 0.02383316782522346,
+    "accuracy_on_valid": 0.7796817625458996,
+    "per_class": {
+      "Positive": {
+        "precision": 0.707531,
+        "recall": 0.961905,
+        "f1": 0.815338,
+        "support": 420
+      },
+      "Negative": {
+        "precision": 0.955882,
+        "recall": 0.552408,
+        "f1": 0.70018,
+        "support": 353
+      },
+      "Neutral": {
+        "precision": 0.904762,
+        "recall": 0.162393,
+        "f1": 0.275362,
+        "support": 234
+      },
+      "Mixed": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 0
+      }
+    }
   }
 }
