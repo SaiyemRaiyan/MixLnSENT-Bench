@@ -457,8 +457,8 @@ Component-wise ablation of `zero_shot_v1.txt` on SentMix-3L ($N=1,007$ rows) usi
 | **Cond 2** | Drop Rule 1: Bilingual Understanding (`drop_rule1_v1`) | **0.6733** | **+0.0070** | **0.6926** | **+0.0034** | **16.09%** | **-0.40%** | **0.8024** |
 | **Cond 3** | Drop Rule 2: Lexicon Cues *bhalo/kharap* (`drop_rule2_v1`) | **0.6743** | **+0.0079** | **0.6951** | **+0.0059** | **16.19%** | **-0.30%** | **0.8045** |
 | **Cond 4** | Drop Rule 3: Sentence Context Directive (`drop_rule3_v1`) | **0.6653** | **-0.0010** | **0.6849** | **-0.0043** | **16.88%** | **+0.40%** | **0.8005** |
-| **Cond 5** | Drop Rule 4: Strict Mixed Constraint (`drop_rule4_v1`) | *Running* | *In-Flight* | *In-Flight* | *In-Flight* | *In-Flight* | *In-Flight* | *In-Flight* |
-| **Cond 6** | Drop Rule 5: Neutral Fallback Directive (`drop_rule5_v1`) | *Queued* | *Queued* | *Queued* | *Queued* | *Queued* | *Queued* | *Queued* |
+| **Cond 5** | Drop Rule 4: Strict Mixed Constraint (`drop_rule4_v1`) | **0.6306** | **-0.0358** | **0.6485** | **-0.0407** | **19.27%** | **+2.78%** | **0.7811** |
+| **Cond 6** | Drop Rule 5: Neutral Fallback Directive (`drop_rule5_v1`) | *Running* | *In-Flight* | *In-Flight* | *In-Flight* | *In-Flight* | *In-Flight* | *In-Flight* |
 | **Cond 7** | Drop Rule 6: Sarcasm Directive (`drop_rule6_v1`) | *Queued* | *Queued* | *Queued* | *Queued* | *Queued* | *Queued* | *Queued* |
 | **Cond 8** | Drop Rule 7: Emoticon Directive (`drop_rule7_v1`) | *Queued* | *Queued* | *Queued* | *Queued* | *Queued* | *Queued* | *Queued* |
 | **Cond 9** | Drop All 7 Rules, Keep Defs (`drop_all_rules_v1`) | *Queued* | *Queued* | *Queued* | *Queued* | *Queued* | *Queued* | *Queued* |
@@ -481,6 +481,7 @@ Why did Gemini predict 19.1% and Qwen 16.5% `Mixed` labels on SentMix-3L when ze
 Our micro-ablation findings in Table 6 resolve a central debate in prompt engineering:
 - **Lexical Anchoring is Harmful (Rule 2):** Providing specific dictionary cues (*bhalo*, *valo*, *vlo*, *kharap*) degrades performance ($\Delta Acc = +0.79\%$ when dropped). Concrete lexical examples cause local keyword anchoring. If a negative review contains the word *bhalo* sarcastically or conditionally (*"eta bhalo hote parto"* / *"this could have been good"*), the model over-indexes on the prompted cue word and misclassifies the utterance.
 - **Contextual Directives are Protective (Rule 3):** Dropping the abstract directive *"Base your decision on the entire sentence context, not just individual words"* causes accuracy to fall ($\Delta Acc = -0.10\%$) and hallucinated `Mixed` to increase ($+0.40\%$). Abstract contextual instructions serve as an essential defense against local lexical traps.
+- **Strict Heuristic Constraints Function as Vital Guardrails Against Runaway Hallucination (Rule 4):** When Rule 4 (*"Use Mixed ONLY when both positive and negative sentiments are clearly present and neither clearly dominates. If one polarity is dominant, choose that polarity."*) was eliminated, model performance suffered its sharpest collapse: accuracy fell by **-3.58%**, Macro F1 dropped by **-0.0407 (-4.07pp)**, and hallucinated `Mixed` emissions surged from 16.48% to **19.27% (+2.78pp)**. This demonstrates a crucial dual dynamic: while defining an absent class creates an inductive attractor (inducing false emissions), negative disambiguation directives function as essential hydraulic dams preventing catastrophic runaway hallucination.
 
 ### 4. Zero-Shot Ecological & Computational Superiority
 - Training an mBERT or XLM-RoBERTa model on 20,000 rows requires multiple GPU hours, gigabytes of dependency installations, and carbon emissions.

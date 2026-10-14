@@ -1,0 +1,224 @@
+{
+  "zero_shot_v1": {
+    "name": "Baseline (Full 7 Rules)",
+    "description": "Intact elaborate prompt",
+    "accuracy": 0.666336,
+    "delta_acc": 0.0,
+    "f1": 0.689215,
+    "delta_f1": 0.0,
+    "invalid_rate": 0.16484607745779542,
+    "delta_invalid": 0.0,
+    "accuracy_on_valid": 0.797859690844233,
+    "per_class": {
+      "Positive": {
+        "precision": 0.724868,
+        "recall": 0.978571,
+        "f1": 0.832827,
+        "support": 420
+      },
+      "Negative": {
+        "precision": 0.957346,
+        "recall": 0.572238,
+        "f1": 0.716312,
+        "support": 353
+      },
+      "Neutral": {
+        "precision": 0.920635,
+        "recall": 0.247863,
+        "f1": 0.390572,
+        "support": 234
+      },
+      "Mixed": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 0
+      }
+    }
+  },
+  "zero_shot_ablate_drop_mixed_def_v1": {
+    "name": "Drop Mixed Def",
+    "description": "Removes definition of Mixed",
+    "accuracy": 0.677259,
+    "delta_acc": 0.010923000000000016,
+    "f1": 0.698432,
+    "delta_f1": 0.00921700000000003,
+    "invalid_rate": 0.15590863952333664,
+    "delta_invalid": -0.00893743793445878,
+    "accuracy_on_valid": 0.8023529411764706,
+    "per_class": {
+      "Positive": {
+        "precision": 0.731922,
+        "recall": 0.988095,
+        "f1": 0.840932,
+        "support": 420
+      },
+      "Negative": {
+        "precision": 0.958333,
+        "recall": 0.586402,
+        "f1": 0.727592,
+        "support": 353
+      },
+      "Neutral": {
+        "precision": 0.895522,
+        "recall": 0.25641,
+        "f1": 0.398671,
+        "support": 234
+      },
+      "Mixed": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 0
+      }
+    }
+  },
+  "zero_shot_ablate_drop_rule1_v1": {
+    "name": "Drop Rule 1",
+    "description": "Removes bilingual understanding rule",
+    "accuracy": 0.673287,
+    "delta_acc": 0.0069509999999999295,
+    "f1": 0.692574,
+    "delta_f1": 0.003359000000000001,
+    "invalid_rate": 0.1608738828202582,
+    "delta_invalid": -0.00397219463753723,
+    "accuracy_on_valid": 0.8023668639053254,
+    "per_class": {
+      "Positive": {
+        "precision": 0.731794,
+        "recall": 0.980952,
+        "f1": 0.83825,
+        "support": 420
+      },
+      "Negative": {
+        "precision": 0.959641,
+        "recall": 0.606232,
+        "f1": 0.743056,
+        "support": 353
+      },
+      "Neutral": {
+        "precision": 0.881356,
+        "recall": 0.222222,
+        "f1": 0.354949,
+        "support": 234
+      },
+      "Mixed": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 0
+      }
+    }
+  },
+  "zero_shot_ablate_drop_rule2_v1": {
+    "name": "Drop Rule 2",
+    "description": "Removes Banglish lexicon cues (bhalo, etc.)",
+    "accuracy": 0.67428,
+    "delta_acc": 0.007943999999999951,
+    "f1": 0.695131,
+    "delta_f1": 0.005916000000000032,
+    "invalid_rate": 0.1618669314796425,
+    "delta_invalid": -0.0029791459781529084,
+    "accuracy_on_valid": 0.8045023696682464,
+    "per_class": {
+      "Positive": {
+        "precision": 0.736655,
+        "recall": 0.985714,
+        "f1": 0.843177,
+        "support": 420
+      },
+      "Negative": {
+        "precision": 0.958904,
+        "recall": 0.594901,
+        "f1": 0.734266,
+        "support": 353
+      },
+      "Neutral": {
+        "precision": 0.873016,
+        "recall": 0.235043,
+        "f1": 0.37037,
+        "support": 234
+      },
+      "Mixed": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 0
+      }
+    }
+  },
+  "zero_shot_ablate_drop_rule3_v1": {
+    "name": "Drop Rule 3",
+    "description": "Removes sentence-level interpretation rule",
+    "accuracy": 0.665343,
+    "delta_acc": -0.0009930000000000216,
+    "f1": 0.684946,
+    "delta_f1": -0.004268999999999967,
+    "invalid_rate": 0.16881827209533268,
+    "delta_invalid": 0.003972194637537257,
+    "accuracy_on_valid": 0.8004778972520908,
+    "per_class": {
+      "Positive": {
+        "precision": 0.729055,
+        "recall": 0.97381,
+        "f1": 0.833843,
+        "support": 420
+      },
+      "Negative": {
+        "precision": 0.959459,
+        "recall": 0.603399,
+        "f1": 0.74087,
+        "support": 353
+      },
+      "Neutral": {
+        "precision": 0.888889,
+        "recall": 0.205128,
+        "f1": 0.333333,
+        "support": 234
+      },
+      "Mixed": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 0
+      }
+    }
+  },
+  "zero_shot_ablate_drop_rule4_v1": {
+    "name": "Drop Rule 4",
+    "description": "Removes 'Use Mixed ONLY when BOTH' rule",
+    "accuracy": 0.630586,
+    "delta_acc": -0.03575000000000006,
+    "f1": 0.648483,
+    "delta_f1": -0.04073199999999999,
+    "invalid_rate": 0.1926514399205561,
+    "delta_invalid": 0.02780536246276069,
+    "accuracy_on_valid": 0.7810578105781057,
+    "per_class": {
+      "Positive": {
+        "precision": 0.708551,
+        "recall": 0.966667,
+        "f1": 0.817724,
+        "support": 420
+      },
+      "Negative": {
+        "precision": 0.959596,
+        "recall": 0.538244,
+        "f1": 0.689655,
+        "support": 353
+      },
+      "Neutral": {
+        "precision": 0.928571,
+        "recall": 0.166667,
+        "f1": 0.282609,
+        "support": 234
+      },
+      "Mixed": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 0
+      }
+    }
+  }
+}
