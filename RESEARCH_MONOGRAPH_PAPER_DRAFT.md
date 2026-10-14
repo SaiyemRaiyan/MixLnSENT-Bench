@@ -520,6 +520,8 @@ Across our complete 9-condition empirical sweep, we discover that human-crafted 
    - *Rule 7: Emoticon Filtering* ($\Delta Acc = -3.38\%$, $\Delta Inv = +2.38\%$)
    - *Mechanism:* These rules function as non-negotiable hydraulic dams. Once an absent or complex class is defined in the prompt, eliminating these negative constraints causes runaway false emissions.
 
+*(See publication figure: `outputs/xai/figures/fig_prompt_ablation_tripartite.png` for side-by-side visualization of paired accuracy deltas with 95% CIs and hallucinated `Mixed` rates).*
+
 ### 5. Zero-Shot Ecological & Computational Superiority
 - Training an mBERT or XLM-RoBERTa model on 20,000 rows requires multiple GPU hours, gigabytes of dependency installations, and carbon emissions.
 - Zero-shot prompting on lightweight APIs achieves superior performance in minutes, requiring zero parameter updates and zero training infrastructure.
