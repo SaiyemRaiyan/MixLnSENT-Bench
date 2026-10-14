@@ -220,5 +220,79 @@
         "support": 0
       }
     }
+  },
+  "zero_shot_ablate_drop_rule5_v1": {
+    "name": "Drop Rule 5",
+    "description": "Removes 'If unclear, choose Neutral' rule",
+    "accuracy": 0.632572,
+    "delta_acc": -0.033764000000000016,
+    "f1": 0.650759,
+    "delta_f1": -0.038456000000000046,
+    "invalid_rate": 0.1926514399205561,
+    "delta_invalid": 0.02780536246276069,
+    "accuracy_on_valid": 0.7835178351783518,
+    "per_class": {
+      "Positive": {
+        "precision": 0.711268,
+        "recall": 0.961905,
+        "f1": 0.817814,
+        "support": 420
+      },
+      "Negative": {
+        "precision": 0.955882,
+        "recall": 0.552408,
+        "f1": 0.70018,
+        "support": 353
+      },
+      "Neutral": {
+        "precision": 0.926829,
+        "recall": 0.162393,
+        "f1": 0.276364,
+        "support": 234
+      },
+      "Mixed": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 0
+      }
+    }
+  },
+  "zero_shot_ablate_drop_rule6_v1": {
+    "name": "Drop Rule 6",
+    "description": "Removes 'Do not translate' rule",
+    "accuracy": 0.631579,
+    "delta_acc": -0.03475700000000004,
+    "f1": 0.648885,
+    "delta_f1": -0.04032999999999998,
+    "invalid_rate": 0.18967229394240318,
+    "delta_invalid": 0.024826216484607755,
+    "accuracy_on_valid": 0.7794117647058824,
+    "per_class": {
+      "Positive": {
+        "precision": 0.705779,
+        "recall": 0.959524,
+        "f1": 0.81332,
+        "support": 420
+      },
+      "Negative": {
+        "precision": 0.955882,
+        "recall": 0.552408,
+        "f1": 0.70018,
+        "support": 353
+      },
+      "Neutral": {
+        "precision": 0.926829,
+        "recall": 0.162393,
+        "f1": 0.276364,
+        "support": 234
+      },
+      "Mixed": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 0
+      }
+    }
   }
 }
