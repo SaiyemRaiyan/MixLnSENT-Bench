@@ -89,6 +89,22 @@
       "rows": 200
     },
     {
+      "stage": "E1_planted_coalitions_M96_rep1",
+      "sample": "dev",
+      "provider": "groq",
+      "model": "qwen/qwen3.8-27b",
+      "prompt": "sentiment_zero_shot_minimal_v1",
+      "rows": 7930
+    },
+    {
+      "stage": "E1_planted_coalitions_M96_rep2",
+      "sample": "dev",
+      "provider": "groq",
+      "model": "qwen/qwen3.8-27b",
+      "prompt": "sentiment_zero_shot_minimal_v1",
+      "rows": 7930
+    },
+    {
       "stage": "E3",
       "sample": "dev",
       "provider": "groq",

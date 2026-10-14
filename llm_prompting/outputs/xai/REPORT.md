@@ -4,7 +4,7 @@
 
 ## Setup and instrument checks (E0, E1)
 
-Full G1/G2 preregistration status: {"status": "incomplete; no dev_gate.json"}.
+Full G1/G2 preregistration status: {"G1": {"groq/qwen/qwen3.8-27b": {"agreement_A_A2": {"n": 585, "agreement": 1.0, "cohen_kappa": 1.0}, "agreement_A_B": {"n": 585, "agreement": 0.8854700854700854, "cohen_kappa": 0.8345853555602447}, "agreement_A_C": {"n": 585, "agreement": 0.764102564102564, "cohen_kappa": 0.6584230679726671}, "epsilon": 0.0, "noisy": false}, "groq/openai/gpt-oss-20b": {"agreement_A_A2": {"n": 585, "agreement": 0.9863247863247864, "cohen_kappa": 0.979606776824932}, "agreement_A_B": {"n": 585, "agreement": 0.8170940170940171, "cohen_kappa": 0.7294908749897362}, "agreement_A_C": {"n": 585, "agreement": 0.7316239316239316, "cohen_kappa": 0.595921599683231}, "epsilon": 0.013675213675213627, "noisy": false}}, "G2": {"lr_median_spearman": 0.6833637196362471, "lr_top1_agreement": 0.676056338028169, "planted_cue_top1_rate": 0.865979381443299, "coalition_budget": 96, "pipeline_limit": "occlusion_only", "planted_cue_budget_tested": 96}}.
 
 Partial G1 development instrument results (agreement; ε = 1 − repeat agreement):
 
@@ -92,6 +92,8 @@ Language/position, demonstration, and cross-method analyses are exploratory. Lan
 | E0_D | groq/openai/gpt-oss-20b | dev | sentiment_zero_shot_minimal_v1 | 1170 |
 | E0_D | groq/qwen/qwen3.8-27b | dev | sentiment_zero_shot_minimal_v1 | 1170 |
 | E1_planted | groq/qwen/qwen3.8-27b | dev | sentiment_zero_shot_minimal_v1 | 200 |
+| E1_planted_coalitions_M96_rep1 | groq/qwen/qwen3.8-27b | dev | sentiment_zero_shot_minimal_v1 | 7930 |
+| E1_planted_coalitions_M96_rep2 | groq/qwen/qwen3.8-27b | dev | sentiment_zero_shot_minimal_v1 | 7930 |
 | E3 | groq/qwen/qwen3.8-27b | dev | sentiment_zero_shot_minimal_v1 | 1755 |
 
 ## Limitations
