@@ -83,7 +83,7 @@
         0.020159613363304067,
         0.047367695474829004
       ],
-      "holm_p": 6.115419592876321e-06,
+      "holm_p": 9.17312938931448e-06,
       "significant_05": true
     }
   },
@@ -133,8 +133,58 @@
         0.0032190774966710696,
         0.0345167715599327
       ],
-      "holm_p": 0.025573669368214657,
-      "significant_05": true
+      "holm_p": 0.051147338736429314,
+      "significant_05": false
+    }
+  },
+  "zero_shot_ablate_drop_rule2_v1": {
+    "name": "Drop Rule 2",
+    "description": "Removes Banglish lexicon cues (bhalo, etc.)",
+    "accuracy": 0.691162,
+    "delta_acc": 0.008938000000000001,
+    "f1": 0.711012,
+    "delta_f1": 0.007820999999999967,
+    "invalid_rate": 0.11817279046673287,
+    "delta_invalid": -0.011916583912611717,
+    "accuracy_on_valid": 0.7837837837837838,
+    "per_class": {
+      "Positive": {
+        "precision": 0.701695,
+        "recall": 0.985714,
+        "f1": 0.819802,
+        "support": 420
+      },
+      "Negative": {
+        "precision": 0.979899,
+        "recall": 0.552408,
+        "f1": 0.706522,
+        "support": 353
+      },
+      "Neutral": {
+        "precision": 0.878788,
+        "recall": 0.371795,
+        "f1": 0.522523,
+        "support": 234
+      },
+      "Mixed": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 0
+      }
+    },
+    "stats": {
+      "b_base_only": 30,
+      "c_ablate_only": 39,
+      "chi2": 0.927536231884058,
+      "raw_p": 0.3355039530729915,
+      "se": 0.008244072210648351,
+      "ci95": [
+        -0.0072209435984119785,
+        0.025095819467329555
+      ],
+      "holm_p": 0.3355039530729915,
+      "significant_05": false
     }
   }
 }
