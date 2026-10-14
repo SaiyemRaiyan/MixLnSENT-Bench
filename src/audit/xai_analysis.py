@@ -185,4 +185,10 @@ def analyze(provider="groq", model="qwen/qwen3.8-27b", scope="full"):
 
 
 if __name__ == "__main__":
-    analyze()
+    import argparse
+    parser = argparse.ArgumentParser(description="Analyze XAI prompt ablations")
+    parser.add_argument("--model", default="qwen/qwen3.8-27b", help="Model identifier")
+    parser.add_argument("--provider", default="groq", help="API Provider")
+    parser.add_argument("--scope", default="full", help="Data scope")
+    args = parser.parse_args()
+    analyze(provider=args.provider, model=args.model, scope=args.scope)

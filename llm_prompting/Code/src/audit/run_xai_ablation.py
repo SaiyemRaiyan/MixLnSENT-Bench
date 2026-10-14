@@ -17,6 +17,7 @@ PROJECT_ROOT = Path(__file__).resolve().parents[2]
 sys.path.insert(0, str(PROJECT_ROOT))
 
 from src.common.datasets import load
+from src.prompting.models import model_spec
 from src.prompting.runner import run_scope
 
 PROMPTS = [
@@ -33,14 +34,23 @@ PROMPTS = [
 
 
 def main():
-    provider = "groq"
-    model = "qwen/qwen3.8-27b"
+    import argparse
+    parser = argparse.ArgumentParser(description="Run XAI prompt ablations")
+    parser.add_argument("--model", default="openai/gpt-oss-20b", help="Model identifier")
+    parser.add_argument("--provider", default="groq", help="API Provider")
+    parser.add_argument("--batch-size", type=int, default=None, help="Batch size")
+    args = parser.parse_args()
+
+    provider = args.provider
+    model = args.model
     scope = "full"
-    batch_size = 5  # Small token footprint to avoid Groq daily token reservation caps
+    
+    spec = model_spec(provider, model)
+    batch_size = args.batch_size or spec.get("batch_size", 10)
 
     dataset = load("sentmix3l")
     print(f"Loaded {dataset.name} with {len(dataset)} rows.")
-    print(f"Running XAI Prompt Ablations for {model} on {provider}...")
+    print(f"Running XAI Prompt Ablations for {model} on {provider} (batch_size={batch_size})...")
     print("-" * 70)
 
     for idx, prompt_name in enumerate(PROMPTS, 1):
