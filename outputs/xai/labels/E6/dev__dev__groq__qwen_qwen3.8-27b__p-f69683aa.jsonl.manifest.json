@@ -1,0 +1,16 @@
+{
+  "provider": "groq",
+  "model": "qwen/qwen3.8-27b",
+  "prompt": "xai_rationale_extractive_v1",
+  "scope": "dev",
+  "batch_size": 5,
+  "shuffle_seed": 43,
+  "prompt_sha256": "f69683aabecdcdc489ec2d34b6681baf2b36964b23ecf473a70db2f38ea20d4b",
+  "batch_format_sha256": "88019c3ac1f68b3cde03958be2067e06a673cf35ad04cd2136ec4deb6585006d",
+  "git_commit": "599662c5394278aad1b087f05e74dfa91ea179ea",
+  "created_utc": "2026-10-15T04:31:15+00:00",
+  "expected_rows": 580,
+  "variant_id_sha256": "543f000120a72562c74dd9dd442e147b8ba672e64bcb4c9fb47c152d26c51043",
+  "input_sha256": "2c35c60f1af85e2b7848b44f0fbe3e5ce23c32fa88b757accea7fdc15e890bdb",
+  "complete": true
+}

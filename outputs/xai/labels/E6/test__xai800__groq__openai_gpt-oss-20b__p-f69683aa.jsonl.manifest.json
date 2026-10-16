@@ -1,0 +1,16 @@
+{
+  "provider": "groq",
+  "model": "openai/gpt-oss-20b",
+  "prompt": "xai_rationale_extractive_v1",
+  "scope": "test",
+  "batch_size": 35,
+  "shuffle_seed": 43,
+  "prompt_sha256": "f69683aabecdcdc489ec2d34b6681baf2b36964b23ecf473a70db2f38ea20d4b",
+  "batch_format_sha256": "88019c3ac1f68b3cde03958be2067e06a673cf35ad04cd2136ec4deb6585006d",
+  "git_commit": "599662c5394278aad1b087f05e74dfa91ea179ea",
+  "created_utc": "2026-10-15T05:15:32+00:00",
+  "expected_rows": 788,
+  "variant_id_sha256": "b3fd47294bf78420843cd15bebe70dab77fb92ef9eba2c3ea4c7ff630fb5ac39",
+  "input_sha256": "ac9955e5844463f6c3a188efbde9d9e1b58c71dd5f682288b27b48f3702b086d",
+  "complete": true
+}

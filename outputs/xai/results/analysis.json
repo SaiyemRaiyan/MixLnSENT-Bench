@@ -1,0 +1,532 @@
+{
+  "complete_runs": [
+    {
+      "stage": "E0_A",
+      "sample": "dev",
+      "provider": "groq",
+      "model": "openai/gpt-oss-20b",
+      "prompt": "sentiment_zero_shot_minimal_v1",
+      "rows": 585
+    },
+    {
+      "stage": "E0_A",
+      "sample": "dev",
+      "provider": "groq",
+      "model": "qwen/qwen3.8-27b",
+      "prompt": "sentiment_zero_shot_minimal_v1",
+      "rows": 585
+    },
+    {
+      "stage": "E0_A2",
+      "sample": "dev",
+      "provider": "groq",
+      "model": "openai/gpt-oss-20b",
+      "prompt": "sentiment_zero_shot_minimal_v1",
+      "rows": 585
+    },
+    {
+      "stage": "E0_A2",
+      "sample": "dev",
+      "provider": "groq",
+      "model": "qwen/qwen3.8-27b",
+      "prompt": "sentiment_zero_shot_minimal_v1",
+      "rows": 585
+    },
+    {
+      "stage": "E0_B",
+      "sample": "dev",
+      "provider": "groq",
+      "model": "openai/gpt-oss-20b",
+      "prompt": "sentiment_zero_shot_minimal_v1",
+      "rows": 585
+    },
+    {
+      "stage": "E0_B",
+      "sample": "dev",
+      "provider": "groq",
+      "model": "qwen/qwen3.8-27b",
+      "prompt": "sentiment_zero_shot_minimal_v1",
+      "rows": 585
+    },
+    {
+      "stage": "E0_C",
+      "sample": "dev",
+      "provider": "groq",
+      "model": "openai/gpt-oss-20b",
+      "prompt": "sentiment_zero_shot_minimal_v1",
+      "rows": 585
+    },
+    {
+      "stage": "E0_C",
+      "sample": "dev",
+      "provider": "groq",
+      "model": "qwen/qwen3.8-27b",
+      "prompt": "sentiment_zero_shot_minimal_v1",
+      "rows": 585
+    },
+    {
+      "stage": "E0_D",
+      "sample": "dev",
+      "provider": "groq",
+      "model": "openai/gpt-oss-20b",
+      "prompt": "sentiment_zero_shot_minimal_v1",
+      "rows": 1170
+    },
+    {
+      "stage": "E0_D",
+      "sample": "dev",
+      "provider": "groq",
+      "model": "qwen/qwen3.8-27b",
+      "prompt": "sentiment_zero_shot_minimal_v1",
+      "rows": 1170
+    },
+    {
+      "stage": "E1_planted",
+      "sample": "dev",
+      "provider": "groq",
+      "model": "qwen/qwen3.8-27b",
+      "prompt": "sentiment_zero_shot_minimal_v1",
+      "rows": 200
+    },
+    {
+      "stage": "E1_planted_coalitions_M96_rep1",
+      "sample": "dev",
+      "provider": "groq",
+      "model": "qwen/qwen3.8-27b",
+      "prompt": "sentiment_zero_shot_minimal_v1",
+      "rows": 7930
+    },
+    {
+      "stage": "E1_planted_coalitions_M96_rep2",
+      "sample": "dev",
+      "provider": "groq",
+      "model": "qwen/qwen3.8-27b",
+      "prompt": "sentiment_zero_shot_minimal_v1",
+      "rows": 7930
+    },
+    {
+      "stage": "E3",
+      "sample": "dev",
+      "provider": "groq",
+      "model": "openai/gpt-oss-20b",
+      "prompt": "sentiment_zero_shot_minimal_v1",
+      "rows": 1755
+    },
+    {
+      "stage": "E3",
+      "sample": "dev",
+      "provider": "groq",
+      "model": "qwen/qwen3.8-27b",
+      "prompt": "sentiment_zero_shot_minimal_v1",
+      "rows": 1755
+    },
+    {
+      "stage": "E3",
+      "sample": "xai800",
+      "provider": "groq",
+      "model": "openai/gpt-oss-20b",
+      "prompt": "sentiment_zero_shot_minimal_v1",
+      "rows": 2400
+    },
+    {
+      "stage": "E3",
+      "sample": "xai800",
+      "provider": "groq",
+      "model": "qwen/qwen3.8-27b",
+      "prompt": "sentiment_zero_shot_minimal_v1",
+      "rows": 2400
+    },
+    {
+      "stage": "E4",
+      "sample": "xai800",
+      "provider": "groq",
+      "model": "openai/gpt-oss-20b",
+      "prompt": "sentiment_zero_shot_minimal_v1",
+      "rows": 8394
+    },
+    {
+      "stage": "E4",
+      "sample": "xai800",
+      "provider": "groq",
+      "model": "qwen/qwen3.8-27b",
+      "prompt": "sentiment_zero_shot_minimal_v1",
+      "rows": 8376
+    },
+    {
+      "stage": "E6",
+      "sample": "dev",
+      "provider": "groq",
+      "model": "openai/gpt-oss-20b",
+      "prompt": "xai_rationale_extractive_v1",
+      "rows": 576
+    },
+    {
+      "stage": "E6",
+      "sample": "dev",
+      "provider": "groq",
+      "model": "qwen/qwen3.8-27b",
+      "prompt": "xai_rationale_extractive_v1",
+      "rows": 580
+    },
+    {
+      "stage": "E6",
+      "sample": "xai800",
+      "provider": "groq",
+      "model": "openai/gpt-oss-20b",
+      "prompt": "xai_rationale_extractive_v1",
+      "rows": 788
+    },
+    {
+      "stage": "E6",
+      "sample": "xai800",
+      "provider": "groq",
+      "model": "qwen/qwen3.8-27b",
+      "prompt": "xai_rationale_extractive_v1",
+      "rows": 788
+    },
+    {
+      "stage": "E8",
+      "sample": "xai800",
+      "provider": "groq",
+      "model": "openai/gpt-oss-20b",
+      "prompt": "sentiment_zero_shot_minimal_v1",
+      "rows": 547
+    },
+    {
+      "stage": "E8",
+      "sample": "xai800",
+      "provider": "groq",
+      "model": "qwen/qwen3.8-27b",
+      "prompt": "sentiment_zero_shot_minimal_v1",
+      "rows": 608
+    },
+    {
+      "stage": "E9",
+      "sample": "xai800",
+      "provider": "groq",
+      "model": "openai/gpt-oss-20b",
+      "prompt": "sentiment_zero_shot_ablate_drop_mixed_def_v1",
+      "rows": 800
+    },
+    {
+      "stage": "E9",
+      "sample": "xai800",
+      "provider": "groq",
+      "model": "openai/gpt-oss-20b",
+      "prompt": "sentiment_zero_shot_ablate_drop_rule1_v1",
+      "rows": 800
+    },
+    {
+      "stage": "E9",
+      "sample": "xai800",
+      "provider": "groq",
+      "model": "openai/gpt-oss-20b",
+      "prompt": "sentiment_zero_shot_ablate_drop_rule2_v1",
+      "rows": 800
+    },
+    {
+      "stage": "E9",
+      "sample": "xai800",
+      "provider": "groq",
+      "model": "openai/gpt-oss-20b",
+      "prompt": "sentiment_zero_shot_ablate_drop_rule3_v1",
+      "rows": 800
+    },
+    {
+      "stage": "E9",
+      "sample": "xai800",
+      "provider": "groq",
+      "model": "openai/gpt-oss-20b",
+      "prompt": "sentiment_zero_shot_ablate_drop_rule4_v1",
+      "rows": 800
+    },
+    {
+      "stage": "E9",
+      "sample": "xai800",
+      "provider": "groq",
+      "model": "openai/gpt-oss-20b",
+      "prompt": "sentiment_zero_shot_ablate_drop_rule5_v1",
+      "rows": 800
+    },
+    {
+      "stage": "E9",
+      "sample": "xai800",
+      "provider": "groq",
+      "model": "openai/gpt-oss-20b",
+      "prompt": "sentiment_zero_shot_ablate_drop_rule6_v1",
+      "rows": 800
+    },
+    {
+      "stage": "E9",
+      "sample": "xai800",
+      "provider": "groq",
+      "model": "openai/gpt-oss-20b",
+      "prompt": "sentiment_zero_shot_ablate_drop_rule7_v1",
+      "rows": 800
+    },
+    {
+      "stage": "E9",
+      "sample": "xai800",
+      "provider": "groq",
+      "model": "openai/gpt-oss-20b",
+      "prompt": "sentiment_zero_shot_v1",
+      "rows": 800
+    }
+  ],
+  "baseline_metrics": {
+    "groq/openai/gpt-oss-20b [dev]": {
+      "n": 576,
+      "accuracy": 0.6979166666666666,
+      "per_class_recall": {
+        "0": {
+          "n": 155,
+          "recall": 0.6838709677419355
+        },
+        "1": {
+          "n": 175,
+          "recall": 0.7085714285714285
+        },
+        "2": {
+          "n": 194,
+          "recall": 0.7835051546391752
+        },
+        "3": {
+          "n": 52,
+          "recall": 0.38461538461538464
+        }
+      },
+      "unstable_or_missing": 9
+    },
+    "groq/qwen/qwen3.8-27b [dev]": {
+      "n": 580,
+      "accuracy": 0.7344827586206897,
+      "per_class_recall": {
+        "0": {
+          "n": 154,
+          "recall": 0.7987012987012987
+        },
+        "1": {
+          "n": 176,
+          "recall": 0.6704545454545454
+        },
+        "2": {
+          "n": 199,
+          "recall": 0.7839195979899497
+        },
+        "3": {
+          "n": 51,
+          "recall": 0.5686274509803921
+        }
+      },
+      "unstable_or_missing": 5
+    },
+    "groq/openai/gpt-oss-20b [xai800]": {
+      "n": 788,
+      "accuracy": 0.6281725888324873,
+      "per_class_recall": {
+        "0": {
+          "n": 198,
+          "recall": 0.6868686868686869
+        },
+        "1": {
+          "n": 199,
+          "recall": 0.7537688442211056
+        },
+        "2": {
+          "n": 196,
+          "recall": 0.75
+        },
+        "3": {
+          "n": 195,
+          "recall": 0.31794871794871793
+        }
+      },
+      "unstable_or_missing": 12
+    },
+    "groq/qwen/qwen3.8-27b [xai800]": {
+      "n": 788,
+      "accuracy": 0.6713197969543148,
+      "per_class_recall": {
+        "0": {
+          "n": 196,
+          "recall": 0.7806122448979592
+        },
+        "1": {
+          "n": 199,
+          "recall": 0.6683417085427136
+        },
+        "2": {
+          "n": 195,
+          "recall": 0.717948717948718
+        },
+        "3": {
+          "n": 198,
+          "recall": 0.5202020202020202
+        }
+      },
+      "unstable_or_missing": 12
+    }
+  },
+  "faithfulness_metrics": {},
+  "mixed_transitions": {
+    "groq/openai/gpt-oss-20b": {
+      "clause_delete_left": {
+        "3->1": 53,
+        "3->3": 2,
+        "3->0": 3,
+        "3->2": 3
+      },
+      "clause_delete_right": {
+        "3->0": 57,
+        "3->1": 3,
+        "3->2": 1
+      }
+    },
+    "groq/qwen/qwen3.8-27b": {
+      "clause_delete_left": {
+        "3->1": 72,
+        "3->2": 9,
+        "3->0": 11
+      },
+      "clause_delete_right": {
+        "3->0": 82,
+        "3->2": 7,
+        "3->1": 2
+      }
+    }
+  },
+  "hypotheses": {
+    "P1": {},
+    "P2": {},
+    "P3": {
+      "groq/openai/gpt-oss-20b (clause_delete_left)": {
+        "estimate": 0.726775956284153,
+        "ci_low": 0.633879781420765,
+        "ci_high": 0.8142076502732241,
+        "n": 61,
+        "outcome": "supported"
+      },
+      "groq/openai/gpt-oss-20b (clause_delete_right)": {
+        "estimate": 0.7595628415300547,
+        "ci_low": 0.6830601092896175,
+        "ci_high": 0.8360655737704918,
+        "n": 61,
+        "outcome": "supported"
+      },
+      "groq/qwen/qwen3.8-27b (clause_delete_left)": {
+        "estimate": 0.963768115942029,
+        "ci_low": 0.9347826086956522,
+        "ci_high": 0.9927536231884058,
+        "n": 92,
+        "outcome": "supported"
+      },
+      "groq/qwen/qwen3.8-27b (clause_delete_right)": {
+        "estimate": 0.9633699633699634,
+        "ci_low": 0.9340659340659341,
+        "ci_high": 0.9926739926739926,
+        "n": 91,
+        "outcome": "supported"
+      }
+    },
+    "P4": {
+      "groq/openai/gpt-oss-20b": {
+        "estimate": 0.38974358974358975,
+        "ci_low": 0.3051282051282051,
+        "ci_high": 0.47179487179487184,
+        "n": 130,
+        "outcome": "supported"
+      },
+      "groq/qwen/qwen3.8-27b": {
+        "estimate": 0.24427480916030533,
+        "ci_low": 0.15521628498727738,
+        "ci_high": 0.3333333333333333,
+        "n": 131,
+        "outcome": "supported"
+      }
+    },
+    "P5": {
+      "groq/openai/gpt-oss-20b": [
+        {
+          "prompt": "zero_shot_ablate_drop_mixed_def_v1",
+          "n": 800,
+          "accuracy_delta": -0.010000000000000009,
+          "ci_low": -0.0275,
+          "ci_high": 0.0075,
+          "pvalue": 0.3317497633694906,
+          "pvalue_holm": 1.0,
+          "outcome": "not supported"
+        },
+        {
+          "prompt": "zero_shot_ablate_drop_rule1_v1",
+          "n": 800,
+          "accuracy_delta": -0.003750000000000031,
+          "ci_low": -0.0175,
+          "ci_high": 0.01,
+          "pvalue": 0.7283324808813632,
+          "pvalue_holm": 1.0,
+          "outcome": "not supported"
+        },
+        {
+          "prompt": "zero_shot_ablate_drop_rule2_v1",
+          "n": 800,
+          "accuracy_delta": -0.020000000000000018,
+          "ci_low": -0.03875,
+          "ci_high": -0.00125,
+          "pvalue": 0.051893895928921435,
+          "pvalue_holm": 0.4151511674313715,
+          "outcome": "not supported"
+        },
+        {
+          "prompt": "zero_shot_ablate_drop_rule3_v1",
+          "n": 800,
+          "accuracy_delta": 0.0050000000000000044,
+          "ci_low": -0.0125,
+          "ci_high": 0.0225,
+          "pvalue": 0.6718110337653656,
+          "pvalue_holm": 1.0,
+          "outcome": "not supported"
+        },
+        {
+          "prompt": "zero_shot_ablate_drop_rule4_v1",
+          "n": 800,
+          "accuracy_delta": -0.0025000000000000577,
+          "ci_low": -0.02625,
+          "ci_high": 0.02,
+          "pvalue": 0.9151865048428764,
+          "pvalue_holm": 1.0,
+          "outcome": "not supported"
+        },
+        {
+          "prompt": "zero_shot_ablate_drop_rule5_v1",
+          "n": 800,
+          "accuracy_delta": 0.007499999999999951,
+          "ci_low": -0.01,
+          "ci_high": 0.02375,
+          "pvalue": 0.47988766169832786,
+          "pvalue_holm": 1.0,
+          "outcome": "not supported"
+        },
+        {
+          "prompt": "zero_shot_ablate_drop_rule6_v1",
+          "n": 800,
+          "accuracy_delta": 0.016249999999999987,
+          "ci_low": -0.00625,
+          "ci_high": 0.0375,
+          "pvalue": 0.18745986796619285,
+          "pvalue_holm": 1.0,
+          "outcome": "not supported"
+        },
+        {
+          "prompt": "zero_shot_ablate_drop_rule7_v1",
+          "n": 800,
+          "accuracy_delta": -0.003750000000000031,
+          "ci_low": -0.02,
+          "ci_high": 0.0125,
+          "pvalue": 0.765991824244793,
+          "pvalue_holm": 1.0,
+          "outcome": "not supported"
+        }
+      ]
+    }
+  }
+}

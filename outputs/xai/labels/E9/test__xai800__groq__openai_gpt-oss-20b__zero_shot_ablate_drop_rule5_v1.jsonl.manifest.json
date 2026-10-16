@@ -1,0 +1,16 @@
+{
+  "provider": "groq",
+  "model": "openai/gpt-oss-20b",
+  "prompt": "sentiment_zero_shot_ablate_drop_rule5_v1",
+  "scope": "test",
+  "batch_size": 35,
+  "shuffle_seed": 43,
+  "prompt_sha256": "65b08aacc8b30ae667ba97d2407f2b4d30ec9c10c41369756d5f1ad84ec685a5",
+  "batch_format_sha256": "03dc237e769911c2ef2fc5d03644752f38a2403e1b1b5688a1e098c6b00f0a04",
+  "git_commit": "599662c5394278aad1b087f05e74dfa91ea179ea",
+  "created_utc": "2026-10-15T11:07:02+00:00",
+  "expected_rows": 800,
+  "variant_id_sha256": "73cd48c37cdeab820578b60b63a65bbb47678e69f29ea9c365bb59adc1610744",
+  "input_sha256": "bfcd020cae75fbb49bc03116170f8239677d94f6470dc2bd8214d3abf10a2012",
+  "complete": true
+}
