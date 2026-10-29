@@ -1,14 +1,3 @@
-# Comprehensive Research Monograph & Paper Drafting Blueprint: Zero-Shot Prompting, Cross-Lingual Generalization, and Mechanistic Explainability in Code-Mixed Bengali Sentiment Analysis
-
-**Authors / Research Team:** Shihab et al. & Saiyem Raiyan  
-**Target Submission:** Top-Tier Computational Linguistics / NLP Venue (ACL / EMNLP / COLING / NAACL)  
-**Primary Repositories:**  
-- Core Development: `d:\Research\Sentiment-Analysis` (`origin/main`, `origin/llm-prompting`)  
-- Benchmark Consortium: `https://github.com/SaiyemRaiyan/MixLnSENT-Bench.git` (`upstream/llm-prompting`)  
-**Historical Anchor:** `command-code-session-4d49b91f.html` (Chronological Session Log)  
-**Date:** October 2026  
-
----
 
 ## Table of Contents
 1. [Executive Summary & High-Level Narrative](#1-executive-summary--high-level-narrative)
